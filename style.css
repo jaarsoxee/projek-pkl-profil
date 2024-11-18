@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: aqua;
+    background-image: url('building.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 45vw;
+    height: 90%;
+    margin-right: 5vw;
+    border-radius: 10px;
+    background-color: rgba(205, 205, 205, 0.783);
+}
+
+.card h1 {
+    font-size: 25px;
+    font-weight: 800;
+    width: 80%;
+}
+
+.card img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 15px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.links {
+    width: 45vw;
+    display: flex;
+    column-gap: 10px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    position: relative;
+}
+
+.links a {
+    transition: 0.2s transform ease-in-out;
+    background-color: rgba(97, 188, 27, 0.427);
+    border: 2px solid rgba(97, 188, 27, 0.881);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 5px;
+    width: auto;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.links a:first-child {
+    border: 2px solid rgba(188, 172, 27, 0.662);
+    background-color: rgba(188, 172, 27, 0.482);
+}
+
+.links a:nth-child(2) {
+    border: 2px solid rgba(188, 27, 183, 0.662);
+    background-color: rgba(188, 27, 183, 0.482);
+}
+
+.links a:nth-child(4) {
+    border: 2px solid rgba(27, 102, 188, 0.662);
+    background-color: rgba(27, 102, 188, 0.482);
+}
+
+.links a:nth-child(5) {
+    border: 2px solid rgba(188, 57, 27, 0.662);
+    background-color: rgba(188, 57, 27, 0.482);
+}
+
+.links a:nth-child(6) {
+    border: 2px solid rgba(27, 175, 188, 0.662);
+    background-color: rgba(27, 175, 188, 0.482);
+}
+
+.links a:hover {
+    transform: scale(1.04);
+}
+
+.content {
+    height: 90%;
+}
+
+.content input {
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.copy {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
